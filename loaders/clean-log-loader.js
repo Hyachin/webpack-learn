@@ -1,4 +1,3 @@
 module.exports = function (content) {
-    console.log('content is', content);
-    return content
+    return content.replace(/console\.log\(.*\);?/g, '')
 }
