@@ -1,5 +1,5 @@
 console.log('hello main');
-function sum(a, b) {
-    return a + b
+const sum = (...args) => {
+    return args.reduce((p, c) => p + c, 0)
 }
-console.log(sum(1, 2));
+console.log(sum(1, 2, 3));
