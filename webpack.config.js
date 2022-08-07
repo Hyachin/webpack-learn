@@ -12,7 +12,15 @@ module.exports = {
         rules: [
             {
                 test: /\.js$/,
-                loader: "./loaders/clean-log-loader",
+                use: [
+                    "./loaders/clean-log-loader",
+                    {
+                        loader: './loaders/banner-loader',
+                        options: {
+                            author: 'Hyachin'
+                        }
+                    }
+                ]
             }
         ]
     },
