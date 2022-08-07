@@ -27,6 +27,15 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(jpe?g|png|gif)$/,
+                loader: './loaders/file-loader',
+                type: "javascript/auto", // 解决图片重复打包问题
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
     },

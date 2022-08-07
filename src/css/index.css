@@ -1,0 +1,15 @@
+.box1 {
+  width: 536px;
+  height: 354px;
+  background-image: url("../images/1.jpg");
+}
+.box2 {
+  width: 536px;
+  height: 354px;
+  background-image: url("../images/2.jpg");
+}
+.box3 {
+  width: 536px;
+  height: 354px;
+  background-image: url("../images/3.jpg");
+}
