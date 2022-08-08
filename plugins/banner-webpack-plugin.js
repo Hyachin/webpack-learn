@@ -10,7 +10,6 @@ class BannerWebpackPlugin {
                 name: 'BannerWebpackPlugin',
                 stage: webpack.Compilation.PROCESS_ASSETS_STAGE_DEV_TOOLING,
             }, (assets) => {
-                // debugger
                 const extensions = ['css', 'js']
                 const assetPaths = Object.keys(assets).filter((path) => {
                     const splitted = path.split(".");
