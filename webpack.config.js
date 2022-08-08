@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const TestPlugin = require('./plugins/test-plugin')
 const BannerWebpackPlugin = require('./plugins/banner-webpack-plugin')
 const CleanWebpackPlugin = require('./plugins/clean-webpack-plugin')
+const AnalyzeWebpackPlugin = require('./plugins/analyze-webpack-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
@@ -49,7 +50,8 @@ module.exports = {
         new BannerWebpackPlugin({
             author: 'Hyachin'
         }),
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new AnalyzeWebpackPlugin()
     ],
     mode: 'production'
 }
